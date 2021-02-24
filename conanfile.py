@@ -11,7 +11,7 @@ class WrapClConan(ConanFile):
     topics = ("<Put some tag here>", "<here>", "<and here>")
     settings = "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False], "fPIC": [True, False]}
-    default_options = {"shared": False, "fPIC": True}
+    default_options = {"shared": True, "fPIC": True}
     generators = "cmake"
 
     def config_options(self):
@@ -19,6 +19,7 @@ class WrapClConan(ConanFile):
             del self.options.fPIC
 
     def source(self):
+        # HACK this to get env_var to define what to do???
         self.run("git clone https://github.com/lmpn/wrap-cl")
         # This small hack might be useful to guarantee proper /MT /MD linkage
         # in MSVC if the packaged project doesn't have variables to set it
@@ -26,7 +27,7 @@ class WrapClConan(ConanFile):
 
     def build(self):
         cmake = CMake(self)
-        cmake.configure(source_folder="wrap-cl")
+        cmake.configure(source_folder=".")
         cmake.build()
 
         # Explicit way:
@@ -35,13 +36,13 @@ class WrapClConan(ConanFile):
         # self.run("cmake --build . %s" % cmake.build_config)
 
     def package(self):
-        self.copy("*.h", dst="include", src="hello")
-        self.copy("*hello.lib", dst="lib", keep_path=False)
+        self.copy("*.h", dst="include", src="wrap-cl")
+        self.copy("*.lib", dst="lib", keep_path=False)
         self.copy("*.dll", dst="bin", keep_path=False)
         self.copy("*.so", dst="lib", keep_path=False)
         self.copy("*.dylib", dst="lib", keep_path=False)
         self.copy("*.a", dst="lib", keep_path=False)
 
     def package_info(self):
-        self.cpp_info.libs = ["hello"]
+        self.cpp_info.libs = ["wrap-cl"]
 

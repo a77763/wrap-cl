@@ -1,17 +1,17 @@
 [
 {
   "directory": "/Users/lmpn/Desktop/conan_example/wrap-cl/build",
-  "command": "/usr/bin/clang++ -Dwrap_cl_EXPORTS -I/Users/lmpn/Desktop/conan_example/wrap-cl/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -fPIC -std=gnu++17 -o CMakeFiles/wrap-cl.dir/src/clcore.cpp.o -c /Users/lmpn/Desktop/conan_example/wrap-cl/src/clcore.cpp",
+  "command": "/usr/bin/clang++ -Dwrap_cl_EXPORTS -I/Users/lmpn/Desktop/conan_example/wrap-cl/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -O3 -DNDEBUG -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mmacosx-version-min=10.14 -fPIC -std=gnu++17 -o CMakeFiles/wrap-cl.dir/src/clcore.cpp.o -c /Users/lmpn/Desktop/conan_example/wrap-cl/src/clcore.cpp",
   "file": "/Users/lmpn/Desktop/conan_example/wrap-cl/src/clcore.cpp"
 },
 {
   "directory": "/Users/lmpn/Desktop/conan_example/wrap-cl/build",
-  "command": "/usr/bin/clang++ -Dwrap_cl_EXPORTS -I/Users/lmpn/Desktop/conan_example/wrap-cl/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -fPIC -std=gnu++17 -o CMakeFiles/wrap-cl.dir/src/clkernel.cpp.o -c /Users/lmpn/Desktop/conan_example/wrap-cl/src/clkernel.cpp",
+  "command": "/usr/bin/clang++ -Dwrap_cl_EXPORTS -I/Users/lmpn/Desktop/conan_example/wrap-cl/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -O3 -DNDEBUG -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mmacosx-version-min=10.14 -fPIC -std=gnu++17 -o CMakeFiles/wrap-cl.dir/src/clkernel.cpp.o -c /Users/lmpn/Desktop/conan_example/wrap-cl/src/clkernel.cpp",
   "file": "/Users/lmpn/Desktop/conan_example/wrap-cl/src/clkernel.cpp"
 },
 {
   "directory": "/Users/lmpn/Desktop/conan_example/wrap-cl/build",
-  "command": "/usr/bin/clang++ -Dwrap_cl_EXPORTS -I/Users/lmpn/Desktop/conan_example/wrap-cl/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -fPIC -std=gnu++17 -o CMakeFiles/wrap-cl.dir/src/clmemory.cpp.o -c /Users/lmpn/Desktop/conan_example/wrap-cl/src/clmemory.cpp",
+  "command": "/usr/bin/clang++ -Dwrap_cl_EXPORTS -I/Users/lmpn/Desktop/conan_example/wrap-cl/include -iframework /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -O3 -DNDEBUG -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mmacosx-version-min=10.14 -fPIC -std=gnu++17 -o CMakeFiles/wrap-cl.dir/src/clmemory.cpp.o -c /Users/lmpn/Desktop/conan_example/wrap-cl/src/clmemory.cpp",
   "file": "/Users/lmpn/Desktop/conan_example/wrap-cl/src/clmemory.cpp"
 }
 ]
