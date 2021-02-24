@@ -1,8 +1,10 @@
 #include "clmemory.h"
 #include <stdexcept>
+#include <iostream>
 
 void clMemcpy(void *dst, const void *src, size_t bytes, clMemcpyKind kind) {
     cl_int err;
+    std::cout << "memcpy" << std::endl;
     if(kind == clMemcpyDeviceToHost) {
         err = clEnqueueReadBuffer(clcore::getCLQueue(), (cl_mem)src, CL_TRUE, 0,
                                          bytes, dst, 0, NULL, NULL);
