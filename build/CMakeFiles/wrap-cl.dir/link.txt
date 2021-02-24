@@ -1,0 +1,2 @@
+/usr/bin/ar qc libwrap-cl.a CMakeFiles/wrap-cl.dir/src/clcore.cpp.o CMakeFiles/wrap-cl.dir/src/clkernel.cpp.o CMakeFiles/wrap-cl.dir/src/clmemory.cpp.o
+/usr/bin/ranlib libwrap-cl.a
