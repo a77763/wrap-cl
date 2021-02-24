@@ -2,7 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/wrap-cl.dir/src/clcore.cpp.o"
   "CMakeFiles/wrap-cl.dir/src/clkernel.cpp.o"
   "CMakeFiles/wrap-cl.dir/src/clmemory.cpp.o"
-  "libwrap-cl.a"
+  "libwrap-cl.dylib"
   "libwrap-cl.pdb"
 )
 

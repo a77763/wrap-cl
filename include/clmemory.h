@@ -1,6 +1,7 @@
-#pragma once
+#ifndef CLMEMORY
+#define CLMEMORY
 
-#include <clcore.hpp>
+#include "clcore.h"
 
 enum clMemcpyKind {
     clMemcpyDeviceToHost=111,
@@ -13,3 +14,5 @@ void clMalloc( void ** ptr, size_t size);
 void clFree(void * ptr);
 void clMemcpy(void * dst, const void * src, size_t count, enum clMemcpyKind kind);
 void clMemset(void * ptr, unsigned int value, size_t count);
+
+#endif

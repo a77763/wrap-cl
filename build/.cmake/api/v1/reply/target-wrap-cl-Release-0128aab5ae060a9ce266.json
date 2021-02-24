@@ -1,9 +1,8 @@
 {
-	"archive" : {},
 	"artifacts" : 
 	[
 		{
-			"path" : "libwrap-cl.a"
+			"path" : "libwrap-cl.dylib"
 		}
 	],
 	"backtrace" : 1,
@@ -26,19 +25,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 10,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 7,
+				"line" : 9,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
 				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 7,
 				"parent" : 0
 			}
 		]
@@ -49,21 +48,28 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14"
+					"fragment" : "-O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -fPIC"
 				},
 				{
 					"fragment" : "-std=gnu++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "wrap_cl_EXPORTS"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenCL.framework"
+					"path" : "/Users/lmpn/Desktop/conan_example/wrap-cl/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/Users/lmpn/Desktop/conan_example/wrap-cl/include"
+					"isSystem" : true,
+					"path" : "/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenCL.framework"
 				}
 			],
 			"language" : "CXX",
@@ -84,8 +90,27 @@
 		}
 	],
 	"id" : "wrap-cl::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-framework",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "OpenCL",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
 	"name" : "wrap-cl",
-	"nameOnDisk" : "libwrap-cl.a",
+	"nameOnDisk" : "libwrap-cl.dylib",
 	"paths" : 
 	{
 		"build" : ".",
@@ -124,5 +149,5 @@
 			"sourceGroupIndex" : 0
 		}
 	],
-	"type" : "STATIC_LIBRARY"
+	"type" : "SHARED_LIBRARY"
 }

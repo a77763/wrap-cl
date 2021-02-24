@@ -1,4 +1,4 @@
-#include <clmemory.hpp>
+#include "clmemory.h"
 #include <stdexcept>
 
 void clMemcpy(void *dst, const void *src, size_t bytes, clMemcpyKind kind) {

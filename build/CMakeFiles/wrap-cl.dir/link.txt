@@ -1,2 +1,1 @@
-/usr/bin/ar qc libwrap-cl.a CMakeFiles/wrap-cl.dir/src/clcore.cpp.o CMakeFiles/wrap-cl.dir/src/clkernel.cpp.o CMakeFiles/wrap-cl.dir/src/clmemory.cpp.o
-/usr/bin/ranlib libwrap-cl.a
+/usr/bin/clang++ -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -dynamiclib -Wl,-headerpad_max_install_names -o libwrap-cl.dylib -install_name @rpath/libwrap-cl.dylib CMakeFiles/wrap-cl.dir/src/clcore.cpp.o CMakeFiles/wrap-cl.dir/src/clkernel.cpp.o CMakeFiles/wrap-cl.dir/src/clmemory.cpp.o  -framework OpenCL 

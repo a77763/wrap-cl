@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CLCORE
+#define CLCORE
 #ifdef __APPLE__
 #include <OpenCL/opencl.h>
 #else
@@ -20,3 +21,5 @@ namespace clcore{
     void releaseCLContext();
     void checkError(std::string message, cl_int error);
 };
+
+#endif

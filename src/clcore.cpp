@@ -1,4 +1,4 @@
-#include <clcore.hpp>
+#include "clcore.h"
 
 #include <iostream>
 #include <stdexcept>

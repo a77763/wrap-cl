@@ -1,5 +1,6 @@
-#pragma once
-#include <clcore.hpp>
+#ifndef CLKERNEL
+#define CLKERNEL
+#include "clcore.h"
 #include <string>
 #include <unordered_map>
 #include <iostream>
@@ -55,3 +56,4 @@ namespace clcore{
     CLDim3 createGrid2D(size_t gx, size_t gy, size_t lx, size_t ly);
     CLKernel* createKernel(std::string kernel_path, std::string kernel_name);
 }
+#endif
